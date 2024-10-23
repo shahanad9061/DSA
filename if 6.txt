@@ -1,0 +1,15 @@
+int main()
+{
+   int maths,science;
+   printf("enter the maths mark");
+   scanf("%d",&maths);
+   printf("enter the science mark");
+   scanf("%d",&science);
+   if(maths>=50 && science>=50){
+       printf("Passed");
+   }else{
+       printf("failed");
+   }
+
+    return 0;
+}

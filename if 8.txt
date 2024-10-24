@@ -1,0 +1,15 @@
+int main()
+{
+    int temp;
+    printf("enter the temperature");
+    scanf("%d",&temp);
+    if(temp<=15){
+        printf("cold");
+    }else if("temp<=25 && temp>=15"){
+        printf("warm");
+    }else{
+        printf("hot");
+    }
+
+    return 0;
+}

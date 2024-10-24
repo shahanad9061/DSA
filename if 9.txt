@@ -1,0 +1,15 @@
+int main()
+{
+   int price;
+   printf("enter the price");
+   scanf("%d",&price);
+   if(price>=100){
+       printf("discount 10");
+   }else if(price>=50 &&price<=100){
+       printf("discount 5");
+   }else{
+       printf("no discount");
+   }
+
+    return 0;
+}

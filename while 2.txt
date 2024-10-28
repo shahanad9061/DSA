@@ -1,0 +1,15 @@
+int main()
+{
+    int n,i,product=1;
+   printf("enter the positive number");
+   scanf("%d",&n);
+   i=1;
+   while(i <=n){
+       product *= i;
+       i++;
+   }
+   printf(" Sum of natural numbers up to %d is: %d\n",n,product);
+
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+
+int main()
+{
+    int a[100];
+    int i,range;
+    
+    printf("enter the size of array :");
+    scanf("%d",&range);
+    
+    printf("enter the elements :");
+    for(i=0;i<range;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<range;i++){
+        if(i%2==0){
+            a[i]=1;
+        }else{
+            a[i]=0;
+        }
+    }
+    printf("array after replace to zero");
+    for(i=0;i<range;i++){
+        printf("%d\t",a[i]);
+    }
+   
+    
+
+    return 0;
+}

@@ -1,0 +1,17 @@
+int main()
+{
+    int arr[7]={10,20,5,30,15,25,40};
+    int largest,second_largest;
+    largest=second_largest= -2147483648;
+    for(int i=0;i<7;i++){
+        if(arr[i]>largest){
+            second_largest=largest;
+            largest=arr[i];
+        }else if(arr[i]>second_largest && arr[i] !=largest){
+            second_largest=arr[i];
+        }
+    }
+    printf("the second largest element is:%d\n",second_largest);
+    
+    return 0;
+}

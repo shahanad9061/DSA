@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <ctype.h> 
+
+int isVowel(char ch) {
+
+    ch = tolower(ch);
+    
+    
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+        return 1; 
+    }
+    return 0; 
+}
+
+ 
+int isAlphabet(char ch) {
+   
+    return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
+}
+
+int main()
+{
+     char ch;
+
+   
+    printf("Enter a character: ");
+    scanf("%c", &ch);
+
+   
+    if (isAlphabet(ch)) {
+        if (isVowel(ch)) {
+            printf("%c is a vowel.\n", ch);
+        } else {
+            printf("%c is a consonant.\n", ch);
+        }
+    } else {
+        printf("%c is not an alphabetic character.\n", ch);
+    }
+
+    return 0;
+}

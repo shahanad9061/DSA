@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+
+const char* check_even_or_odd(int num){
+    if(num%2==0){
+        return "Even";
+    }else{
+        return "odd";
+    }
+}
+
+int main()
+{
+    int num;
+    printf("Enter a number");
+    scanf("%d",&num);
+    const char* result = check_even_or_odd(num);
+    printf("the number %d is %s.\n",num,result);
+   
+
+    return 0;
+}
